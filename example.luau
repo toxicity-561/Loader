@@ -1,4 +1,4 @@
-local Loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/toxicity-561/Loader/refs/heads/main/source.luau'))()
+local Loader = loadstring(game:HttpGet('https://raw.githubusercontent.com/toxicity-561/Loader/beta/source.luau'))()
 --[[
 Loader:AddTheme({
 	NAMEOFTHEME = "Aqua",
@@ -16,7 +16,10 @@ Loader:AddTheme({
 Loader:SetupConfig({
   EnableXButton = true, -- make sures that the button to close the UI will show
   EnableMiniButton= false, -- usually i dont recommend it but to minize the UI to the title bar (buggy)
-  ClickSound = "rbxassetid://110178949778921" -- default sound you can remove it or just use a different sound
+  ClickSound = "rbxassetid://110178949778921", -- default sound you can remove it or just use a different sound
+  DontShowArrowsWhenTabsis1 = true, -- hides the left and right arrows if you only have 1 tab
+  DontShowIndicator = false, -- hides the page indicator dots at the bottom of the UI
+  AllowClicksOnIndicators = true, -- lets users tap an indicator dot to jump straight to that tab
 })
 local Window = Loader:AddWindow({
   Title = "Test Loader",
