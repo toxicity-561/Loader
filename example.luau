@@ -35,6 +35,7 @@ Tab:AddButton({
 })
 Tab:AddToggle({
   Name = "Toggle",
+  -- Default = false
   Callback = function(galue)
     print("Toggle is now ", galue) -- put galue cuz it was hard on mobile to select and change the g to a v
   end
